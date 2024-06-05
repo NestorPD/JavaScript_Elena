@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+          let frutas1 = ["Manzana", "Banana"];
+    console.log(frutas1); // Manzana y Banana 
+    console.log(frutas1.length); // 2
+    let primero = frutas1[0] // Manzana
+    let ultimo = frutas1[frutas1.length - 1]; // Banana
+    let nuevaLongitud = frutas1.push('Naranja'); // Añade "Naranja" al final
+    // ["Manzana", "Banana", "Naranja"]
+    ultimo = frutas1.pop(); // Elimina "Naranja" del final
+    // ["Manzana", "Banana"]
+
+    //Más ejemplos
+      let numeros = [1,2,3,4];
+      console.log(numeros);
+      let frutas = ['pera', 'manzana', 'fresa'];
+      let variado = [1, "pera", 2, true,3];
+    
+    //Mostrar la longitud de los arrays creados
+      let longitudNumeros = numeros.length;
+      let longitudFrutas = frutas.length;
+      let longitudVariado = variado.length;
+    
+      // console.log(longitudNumeros);
+      // console.log(longitudFrutas);
+      // console.log(longitudVariado);
+    
+    //Mostrar el último elemento de cada Array
+      // let ultimoNumeros = numeros[3];
+      // let ultimoFrutas = frutas[2];
+      // let ultimoVariado = variado[4];
+      let ultimoNumeros = numeros[longitudNumeros-1];
+      let ultimoFrutas = frutas[longitudFrutas-1];
+      let ultimoVariado = variado[longitudVariado-1];
+    
+      // console.log(ultimoNumeros);
+      // console.log(ultimoFrutas);
+      // console.log(ultimoVariado);
+    </script>
+</body>
+</html>

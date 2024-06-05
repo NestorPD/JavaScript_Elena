@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let tablero = [
+      [0, 0, 1, 0, 0],
+      [1, 0, 1, 0, 1],
+      [0, 0, 0, 0, 1],
+      [0, 1, 1, 0, 0],
+      [0, 0, 0, 1, 0]
+    ];
+    console.log(tablero);
+
+    function moverseAbajo(x,y){
+      return (tablero[x+1][y] != 1);   
+    }
+
+    function moverseDerecha(x,y){
+      return (tablero[x][y+1] != 1);   
+    }
+
+    function moverseIzquierda(x,y){
+      return (tablero[x][y-1] != 1);   
+    }
+
+    function moverseArriba(x,y){
+      return (tablero[x-1][y] != 1);   
+    }
+
+    function resolver_laberinto(){
+      let x = 0;
+      let y = 0;
+      console.log(`Empezamos: ${x},${x}`);
+      while (x <= 4 && y <= 4) {
+          if (moverseAbajo(x, y)) {
+            console.log("Puedes ir hacia abajo");
+            x++;
+          } else if (moverseDerecha(x, y)) {
+              console.log("Puedes ir hacia derecha");
+              y++;
+          } else if (moverseArriba(x, y)) {
+              console.log("Puedes ir hacia arriba");
+              x--;
+          } else if (moverseIzquierda(x, y)) {
+              console.log("Puedes ir hacia izquierda");
+              y--;
+          } else {
+              console.log("No hay solución");
+              break;
+          }
+          console.log(`Estoy en: ${x},${y}`);
+          if (x==4 && y==4){
+            console.log('SALIMOS DEL LABERINTO!!');
+            break;
+          } 
+      }
+    }
+
+  //LLamada a la función
+  resolver_laberinto()
+  </script>
+</body>
+</html>
