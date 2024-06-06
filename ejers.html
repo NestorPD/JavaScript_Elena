@@ -30,10 +30,10 @@
     console.log(`Nombre: ${this.nombre}, Paginas: ${this.paginas}, Precio: ${this.precio}`);
     }
 
-    // modificarPrecio(money){
-    //         this.precio = money
-    //         console.log("10 euros")
-    //     }
+    modificarPrecio(nuevoPrecio){
+            this.precio = nuevoPrecio
+            // console.log("10 euros")
+        }
 }
 
             let libro1= new Libro ("Harry Potter", 50, "15 euros")
@@ -46,6 +46,19 @@
 
         console.log(libro3.precio)
 
+                                                            // waaaahhh intentando cambiar el precio
+            libro2.modificarPrecio("5 euros")
+
+            libro2.obtenerInformacion();
+
+                                                        // TODO OK
+
+
+
+
+
+
+
         
 
 
@@ -55,6 +68,7 @@
                 this.peso = peso
                 this.altura = altura
                 this.ruedas = ruedas
+                this.aeropuerto = "Lanzarote"
             }
 
             obtenerInformacion2() {
@@ -78,13 +92,13 @@
 
 
 
-        // let libro_biblioteca = 0
-        // let libro_NObiblioteca = false
+    //     let libro_biblioteca = 0
+    //     let libro_NObiblioteca = false
         
-        // if(libro_biblioteca <= 0) {console.log("no hay libro")}
-        //     else {console.log("Todo OK")}
+    //     if(libro_biblioteca <= 0) {console.log("no hay libro")}
+    //         else {console.log("Todo OK")}
 
-        //     console.log(libro_biblioteca < 0)
+    //         console.log(libro_biblioteca < 0)
 
     //        if(libro_biblioteca <= 0){
     //         var stock= false
@@ -94,11 +108,11 @@
     //       }
     //       console.log(stock)
 
-            // if(libro_biblioteca <= 0){
-            // let stock = false
-            // else{let stock= true}
+    //         if(libro_biblioteca <= 0){
+    //         let stock = false
+    //         else{let stock= true}
 
-            // }
+    //         }
 
 
 
