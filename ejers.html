@@ -28,10 +28,15 @@
 
             obtenerInformacion() {
     console.log(`Nombre: ${this.nombre}, Paginas: ${this.paginas}, Precio: ${this.precio}`);
-}
+    }
+
+    // modificarPrecio(money){
+    //         this.precio = money
+    //         console.log("10 euros")
+    //     }
 }
 
-            let libro1= new Libro ("Harry Potter", 50, "10 euros")
+            let libro1= new Libro ("Harry Potter", 50, "15 euros")
             let libro2= new Libro ("El señor de los anillos", 85, "20 euros")
             let libro3 = new Libro ("El arte de la guerra", 80, "50 euros")
   
@@ -39,6 +44,33 @@
         console.log(libro2);
         console.log(libro3);
 
+        console.log(libro3.precio)
+
+        
+
+
+        class Aviones {
+
+            constructor(peso, altura, ruedas) {
+                this.peso = peso
+                this.altura = altura
+                this.ruedas = ruedas
+            }
+
+            obtenerInformacion2() {
+                console.log(`Peso: ${this.peso}, Altura: ${this.altura}, Ruedas: ${this.ruedas}`)
+            }
+        }
+
+        let Binter = new Aviones ("50kg", "50m", 8)
+        let Airbus = new Aviones ("480kg", "950m", 7)
+        let Avioneta = new Aviones ("150kg", "510m", 3)
+
+        console.log(Binter);
+        console.log(Airbus);
+        console.log(Avioneta);
+
+        console.log(Binter.ruedas)
 
 
 
